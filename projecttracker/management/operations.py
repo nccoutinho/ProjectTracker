@@ -23,8 +23,7 @@ class Operations:
 
             # Check if both projects and tasks data are available
             if not projects_from_json:
-                print("No data available for projects.")
-                return None
+                raise NoDataError()
             elif not tasks_from_json:
                 project_df = pd.DataFrame(projects_from_json)
                 return project_df.head(10)
