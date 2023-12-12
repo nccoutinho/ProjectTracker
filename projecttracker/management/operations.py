@@ -2,6 +2,10 @@ import pandas as pd
 from IPython.display import clear_output
 from projecttracker.utils import file_handler, input_handler
 
+class NoDataError(Exception):
+    def __str__(self):
+        return 'There is no data available.'
+    
 class Operations:
     '''Class that manages project and task operations.'''
 
