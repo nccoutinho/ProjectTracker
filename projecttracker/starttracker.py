@@ -147,7 +147,7 @@ def add_project(op):
     
     while True:
         assigned_to = input_handler.get_assigned_input()
-        if len(owner.strip()) == 0:
+        if len(assigned_to.strip()) == 0:
             print('Invalid input. Please enter the Name of the person it is assigned to.')
         else:
             break  
@@ -186,6 +186,14 @@ def add_task(op):
     """
     name = input_handler.get_task_input()
     project_id = input_handler.get_projectID_input()
+
+    while True:
+        name = input_handler.get_task_input()
+        if len(name.strip()) == 0:
+            print('Invalid input. Please enter the Task Name.')
+        else:
+            break
+
     while True:
         priority_options = ['low', 'medium', 'high']
         priority = input_handler.get_priority_input()
@@ -193,6 +201,7 @@ def add_task(op):
             break
         else:
             print('Invalid input. Please enter low, medium or high as the priority.')
+    
     while True:
         duration = input_handler.get_duration_input()
         try:
@@ -203,7 +212,14 @@ def add_task(op):
             break
     
     comments = input_handler.get_comments_input()
-    assigned_to = input_handler.get_assigned_input()
+
+
+    while True:
+        assigned_to = input_handler.get_assigned_input()
+        if len(assigned_to.strip()) == 0:
+            print('Invalid input. Please enter the Name of the person it is assigned to.')
+        else:
+            break
     
     while True:
         try:
