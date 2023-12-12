@@ -184,13 +184,18 @@ def add_task(op):
     """
     Add a new task with user input to the corresponding project.
     """
-    name = input_handler.get_task_input()
-    project_id = input_handler.get_projectID_input()
-
+   
     while True:
         name = input_handler.get_task_input()
         if len(name.strip()) == 0:
             print('Invalid input. Please enter the Task Name.')
+        else:
+            break
+
+    while True:
+        project_id = input_handler.get_projectID_input()
+        if len(project_id.strip()) == 0:
+            print('Invalid input. Please enter an existing Project ID.')
         else:
             break
 
