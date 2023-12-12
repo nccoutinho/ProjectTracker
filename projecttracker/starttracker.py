@@ -119,7 +119,13 @@ def add_project(op):
     """
     Add a new project with user input.
     """
-    name = input_handler.get_project_input()
+    while True:
+        name = input_handler.get_project_input()
+        if len(name.strip()) == 0:
+            print('Invalid input. Please enter the Project Name.')
+        else:
+            break
+            
     while True:
         priority_options = ['low', 'medium', 'high']
         priority = input_handler.get_priority_input()
@@ -127,6 +133,7 @@ def add_project(op):
             break
         else:
             print('Invalid input. Please enter low, medium or high as the priority.')
+    
     while True:
         duration = input_handler.get_duration_input()
         try:
@@ -137,7 +144,13 @@ def add_project(op):
             break
     
     comments = input_handler.get_comments_input()
-    assigned_to = input_handler.get_assigned_input()
+    
+    while True:
+        assigned_to = input_handler.get_assigned_input()
+        if len(owner.strip()) == 0:
+            print('Invalid input. Please enter the Name of the person it is assigned to.')
+        else:
+            break  
     
     while True:
         try:
@@ -157,8 +170,13 @@ def add_project(op):
                 print('Deadline must be greater than the start date.')
         except ValueError:
             print('Invalid date format. Please enter the date in YYYY-MM-DD format.')
-    owner = input_handler.get_owner_input()
-
+    
+    while True:
+        owner = input_handler.get_owner_input()
+        if len(owner.strip()) == 0:
+            print('Invalid input. Please enter the Owner Name.')
+        else:
+            break
     op.add_proj(Name=name, Priority=priority, Duration=duration, Comments=comments,
                 assignedTo=assigned_to, startDate=start_date, Deadline=deadline, Owner=owner)
 
