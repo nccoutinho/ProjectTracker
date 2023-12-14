@@ -41,3 +41,23 @@ The **_starttracker_** boots up the projecttracker application.
 ### `add_project()`
 - Add a new project with user input.
 
+### `add_task()`
+- Add a new task with user input to the corresponding project.
+
+## Usage
+
+The functions provided here can be utilized to build a command-line interface for managing projects and tasks efficiently.
+
+The **_management_ subpackage** contains **module _operations_** have classes that inherit functionalities:
+
+## Classes
+
+### `Operations`
+
+- Manages project and task operations.
+- Methods:
+  - `view()`: Displays projects and associated tasks.
+  - `add_proj()`: Adds a new project to the system.
+  - `add_task()`: Adds a new task to an existing project.
+  - `modify_item()`: Modifies attributes of a project or task.
+  - `delete_item()`: Deletes a project or task.
