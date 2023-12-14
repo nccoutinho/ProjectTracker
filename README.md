@@ -75,3 +75,31 @@ The **_management_ subpackage** contains **module _operations_** have classes th
 - Projects and tasks are stored and managed using JSON files.
 - Projects and tasks have unique IDs, and new IDs are automatically generated.
 - Attributes of projects and tasks can be modified or deleted using corresponding methods.
+
+This system offers functionalities to manage and track projects and tasks efficiently.
+
+The **_management_ subpackage** contains another **module** namely **_visualizations_** have certain functionalities:
+
+## Functions
+
+### `gantt_chart()`
+- Generates and displays a Gantt chart.
+- Fetches project data from 'project.json' and creates a Gantt chart based on project start and end dates.
+- Draws a vertical line to indicate the current date.
+- Allows the user to display Gantt charts for specific project tasks by entering a project ID.
+
+### `pie_chart()`
+- Generates and displays a Pie chart showing task status distribution in a project.
+- Prompts the user to input a project ID and fetches task data from 'task.json'.
+- Creates a Pie chart illustrating task status distribution (Completed, In Progress, Not Started) for the specified project.
+
+### `scatter_plot()`
+- Generates and displays a Scatter plot depicting project duration versus priority.
+- Retrieves project data from 'project.json' and plots a scatter plot showcasing project duration against project priority.
+
+### `bar_chart()`
+- Generates and displays a Bar chart indicating the number of tasks in each project.
+- Reads task data from 'task.json' and aggregates the count of tasks per project.
+- Presents a bar chart illustrating the number of tasks for each project.
+
+These visualization functions offer insights into project timelines, task status, project workload, and the relationship between project duration and priority.
