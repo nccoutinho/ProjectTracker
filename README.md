@@ -32,3 +32,12 @@ The **_starttracker_** boots up the projecttracker application.
 ### `viz_define()`
 - Define the actions for each option in the Visualization Menu.
 
+### `startup()`
+- Start the Project Tracker application and handle user interactions.
+
+### `view_projects()`
+- View and display project details.
+
+### `add_project()`
+- Add a new project with user input.
+
