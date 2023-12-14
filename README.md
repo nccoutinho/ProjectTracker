@@ -61,3 +61,17 @@ The **_management_ subpackage** contains **module _operations_** have classes th
   - `add_task()`: Adds a new task to an existing project.
   - `modify_item()`: Modifies attributes of a project or task.
   - `delete_item()`: Deletes a project or task.
+
+### `Project`
+
+- Represents a project and inherits properties from `Operations`.
+
+### `Task`
+
+- Represents a task associated with a project and inherits properties from `Project` and `Operations`.
+
+### Notes
+
+- Projects and tasks are stored and managed using JSON files.
+- Projects and tasks have unique IDs, and new IDs are automatically generated.
+- Attributes of projects and tasks can be modified or deleted using corresponding methods.
