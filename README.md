@@ -103,3 +103,27 @@ The **_management_ subpackage** contains another **module** namely **_visualizat
 - Presents a bar chart illustrating the number of tasks for each project.
 
 These visualization functions offer insights into project timelines, task status, project workload, and the relationship between project duration and priority.
+
+The **_utils_ subpackage** contains the **module *file_handler*** that handles reading and writing project/task related data into the file having certain functionalities:
+
+## Functions
+
+### `write_to_json()`
+- Writes object data into a JSON file.
+
+### `read_from_json()`
+- Reads data from a JSON file.
+
+### `delete_all_objects()`
+- Deletes all content from a specified file.
+
+### `write_to_json_dict()`
+- Writes dictionary data into a JSON file.
+
+### `download_csv()`
+- Downloads a Pandas DataFrame as a CSV file.
+
+This script provides a set of tools to manage JSON files, manipulate data (writing data, reading data, clearing file content), and handle CSV file downloads using Pandas DataFrames.
+
+The **_utils_ subpackage** contains another **module *input_handler*** handles inputs obtained from the user having certain functionalities:
+
