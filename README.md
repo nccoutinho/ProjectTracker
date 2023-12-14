@@ -127,3 +127,53 @@ This script provides a set of tools to manage JSON files, manipulate data (writi
 
 The **_utils_ subpackage** contains another **module *input_handler*** handles inputs obtained from the user having certain functionalities:
 
+## Functions
+
+### `get_user_choice()`
+- Prompts the user for a choice and returns an integer value.
+- Catches a `ValueError` for invalid inputs.
+
+### `get_project_input()`
+- Prompts the user to enter a project name and returns the input.
+
+### `get_task_input()`
+- Prompts the user to enter a task name and returns the input.
+
+### `get_projectID_input()`
+- Prompts the user to enter a project ID and returns the input.
+
+### `get_priority_input()`
+- Prompts the user to enter priority and returns the input.
+
+### `get_duration_input()`
+- Prompts the user to enter duration and returns the input.
+
+### `get_comments_input()`
+- Prompts the user to enter comments and returns the input.
+
+### `get_assigned_input()`
+- Prompts the user to enter the name of the person the task is assigned to and returns the input.
+
+### `get_start_date_input()`
+- Prompts the user to enter a start date in the format 'YYYY-MM-DD' and returns the input.
+
+### `get_deadline_input()`
+- Prompts the user to enter a deadline in the format 'YYYY-MM-DD' and returns the input.
+
+### `get_owner_input()`
+- Prompts the user to enter the name of the owner and returns the input.
+
+### `get_project_task_id()`
+- Prompts the user to enter a project or task ID in uppercase and returns the input.
+
+### `any_key_continue()`
+- Prompts the user to press any key to continue.
+
+### `get_file_path()`
+- Prompts the user to enter a file path and returns the input.
+
+## Purpose
+
+- These functions facilitate user interactions by collecting specific inputs related to project and task details, file paths, and user choices.
+- The functions ensure standardized input formats for certain data types like dates (YYYY-MM-DD) and uppercase IDs.
+
