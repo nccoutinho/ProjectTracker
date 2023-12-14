@@ -23,4 +23,12 @@ The **_projecttracker_ package** manages projects and tasks.
 
 The **_starttracker_** boots up the projecttracker application.
 
+### `display_menu()`
+- Display the main menu options for the Project Tracker application.
+
+### `viz_menu()`
+- Display the visualization menu options for the Project Tracker application.
+
+### `viz_define()`
+- Define the actions for each option in the Visualization Menu.
 
